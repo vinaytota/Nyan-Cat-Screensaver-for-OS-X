@@ -7,11 +7,12 @@
 //
 
 #import <ScreenSaver/ScreenSaver.h>
+//#import <Cocoa/Cocoa.h>
 
 
 @interface nyancatView : ScreenSaverView {
-@private
-    
+     NSImage *displayImage;
+     NSImageView *imageView;
 }
 
 @end
