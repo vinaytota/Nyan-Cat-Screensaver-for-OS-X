@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9C1ACD9B13C6A58B000A3361 /* poptart1red1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C1ACD9A13C6A58B000A3361 /* poptart1red1.gif */; };
+		9C42251613CE8523007F00A9 /* NyanStarData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C42251413CE8523007F00A9 /* NyanStarData.h */; };
+		9C42251713CE8523007F00A9 /* NyanStarData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C42251513CE8523007F00A9 /* NyanStarData.m */; };
 		9C4D83F813C408320007DB86 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4D83F713C408320007DB86 /* Cocoa.framework */; };
 		9C4D83FA13C408320007DB86 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4D83F913C408320007DB86 /* ScreenSaver.framework */; };
 		9C4D840413C408320007DB86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C4D840213C408320007DB86 /* InfoPlist.strings */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		9C1ACD9A13C6A58B000A3361 /* poptart1red1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = poptart1red1.gif; sourceTree = "<group>"; };
+		9C42251413CE8523007F00A9 /* NyanStarData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyanStarData.h; sourceTree = "<group>"; };
+		9C42251513CE8523007F00A9 /* NyanStarData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NyanStarData.m; sourceTree = "<group>"; };
 		9C4D83F413C408320007DB86 /* nyancat.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nyancat.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C4D83F713C408320007DB86 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9C4D83F913C408320007DB86 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
@@ -90,6 +94,8 @@
 				9C4D840613C408320007DB86 /* nyancatView.h */,
 				9C4D840813C408320007DB86 /* nyancatView.m */,
 				9C4D840013C408320007DB86 /* Supporting Files */,
+				9C42251413CE8523007F00A9 /* NyanStarData.h */,
+				9C42251513CE8523007F00A9 /* NyanStarData.m */,
 			);
 			path = nyancat;
 			sourceTree = "<group>";
@@ -113,6 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C4D840713C408320007DB86 /* nyancatView.h in Headers */,
+				9C42251613CE8523007F00A9 /* NyanStarData.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C4D840913C408320007DB86 /* nyancatView.m in Sources */,
+				9C42251713CE8523007F00A9 /* NyanStarData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

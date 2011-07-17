@@ -7,12 +7,19 @@
 //
 
 #import <ScreenSaver/ScreenSaver.h>
+#import "NyanStarData.h"
+
 //#import <Cocoa/Cocoa.h>
 
 
 @interface nyancatView : ScreenSaverView {
      NSImage *displayImage;
      NSImageView *imageView;
+     NSMutableArray *nyanStars; 
+     int shiftRainbow;
 }
+
+- (void)drawNyanStar:(NyanStarData*)nyanStar;
+- (void) drawNyanRainbowSection: (NSPoint)origin;
 
 @end
