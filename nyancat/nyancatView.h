@@ -14,12 +14,14 @@
 
 @interface nyancatView : ScreenSaverView {
      NSImage *displayImage;
-     NSImageView *imageView;
      NSMutableArray *nyanStars; 
      int shiftRainbow;
+     int gifFrameNumber;
+     NSMutableArray * gifFrames;
 }
 
 - (void)drawNyanStar:(NyanStarData*)nyanStar;
 - (void) drawNyanRainbowSection: (NSPoint)origin;
+- (void)drawBackground;
 
 @end
