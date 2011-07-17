@@ -10,6 +10,7 @@
 		9C1ACD9B13C6A58B000A3361 /* poptart1red1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C1ACD9A13C6A58B000A3361 /* poptart1red1.gif */; };
 		9C42251613CE8523007F00A9 /* NyanStarData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C42251413CE8523007F00A9 /* NyanStarData.h */; };
 		9C42251713CE8523007F00A9 /* NyanStarData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C42251513CE8523007F00A9 /* NyanStarData.m */; };
+		9C44B00F13D36CFF003E1B93 /* cat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C44B00E13D36CFF003E1B93 /* cat.gif */; };
 		9C4D83F813C408320007DB86 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4D83F713C408320007DB86 /* Cocoa.framework */; };
 		9C4D83FA13C408320007DB86 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4D83F913C408320007DB86 /* ScreenSaver.framework */; };
 		9C4D840413C408320007DB86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C4D840213C408320007DB86 /* InfoPlist.strings */; };
@@ -22,6 +23,7 @@
 		9C1ACD9A13C6A58B000A3361 /* poptart1red1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = poptart1red1.gif; sourceTree = "<group>"; };
 		9C42251413CE8523007F00A9 /* NyanStarData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyanStarData.h; sourceTree = "<group>"; };
 		9C42251513CE8523007F00A9 /* NyanStarData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NyanStarData.m; sourceTree = "<group>"; };
+		9C44B00E13D36CFF003E1B93 /* cat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cat.gif; sourceTree = "<group>"; };
 		9C4D83F413C408320007DB86 /* nyancat.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nyancat.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C4D83F713C408320007DB86 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9C4D83F913C408320007DB86 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
@@ -103,6 +105,7 @@
 		9C4D840013C408320007DB86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C44B00E13D36CFF003E1B93 /* cat.gif */,
 				9C1ACD9A13C6A58B000A3361 /* poptart1red1.gif */,
 				9C4D840113C408320007DB86 /* nyancat-Info.plist */,
 				9C4D840213C408320007DB86 /* InfoPlist.strings */,
@@ -174,6 +177,7 @@
 			files = (
 				9C4D840413C408320007DB86 /* InfoPlist.strings in Resources */,
 				9C1ACD9B13C6A58B000A3361 /* poptart1red1.gif in Resources */,
+				9C44B00F13D36CFF003E1B93 /* cat.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
