@@ -17,6 +17,12 @@
     if (self) {
         [self setAnimationTimeInterval:0.07F];
         
+        /**
+        *
+        * Init image
+        *
+        **/
+        
         NSBundle* bundle = [NSBundle bundleForClass:[self class]];
         NSString* envsPListPath = [bundle pathForResource:@"cat" ofType:@"gif"];
         displayImage = [[[NSImage alloc] initWithContentsOfFile:envsPListPath] autorelease];
@@ -48,14 +54,19 @@
             }
         }
         
+        /**
+         *
+         * Init star data
+         *
+         **/
+        
         nyanStars = [[NSMutableArray alloc] init];
-        for(int x = 0; x < 6; x++) {
+        for(int x = 0; x < 15; x++) {
             NyanStarData* nyanStar = [[NyanStarData alloc] init];
             NSSize dotSize = NSMakeSize(6,6);
             // Calculate random origin point
             NSPoint nyanStarCenter = SSRandomPointForSizeWithinRect( dotSize, [self bounds] );
             [nyanStar setCenter:nyanStarCenter setFrameNumber:x];
-        
             [nyanStars addObject:nyanStar];
         }
         gifFrameNumber = 0;

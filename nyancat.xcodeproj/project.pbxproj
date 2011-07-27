@@ -16,7 +16,6 @@
 		9C4D840413C408320007DB86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C4D840213C408320007DB86 /* InfoPlist.strings */; };
 		9C4D840713C408320007DB86 /* nyancatView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C4D840613C408320007DB86 /* nyancatView.h */; };
 		9C4D840913C408320007DB86 /* nyancatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4D840813C408320007DB86 /* nyancatView.m */; };
-		9C4D841013C408850007DB86 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4D840F13C408850007DB86 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		9C4D840513C408320007DB86 /* nyancat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nyancat-Prefix.pch"; sourceTree = "<group>"; };
 		9C4D840613C408320007DB86 /* nyancatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nyancatView.h; sourceTree = "<group>"; };
 		9C4D840813C408320007DB86 /* nyancatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nyancatView.m; sourceTree = "<group>"; };
-		9C4D840F13C408850007DB86 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C4D841013C408850007DB86 /* OpenGL.framework in Frameworks */,
 				9C4D83F813C408320007DB86 /* Cocoa.framework in Frameworks */,
 				9C4D83FA13C408320007DB86 /* ScreenSaver.framework in Frameworks */,
 			);
@@ -55,7 +52,6 @@
 		9C4D83E713C408320007DB86 = {
 			isa = PBXGroup;
 			children = (
-				9C4D840F13C408850007DB86 /* OpenGL.framework */,
 				9C4D83FF13C408320007DB86 /* nyancat */,
 				9C4D83F613C408320007DB86 /* Frameworks */,
 				9C4D83F513C408320007DB86 /* Products */,
