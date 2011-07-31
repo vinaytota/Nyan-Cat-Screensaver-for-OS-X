@@ -58,9 +58,13 @@
          * Init star data
          *
          **/
+        int numNyanStars = 15;
+        if(isPreview) {
+            numNyanStars = 3;
+        }
         
         nyanStars = [[NSMutableArray alloc] init];
-        for(int x = 0; x < 15; x++) {
+        for(int x = 0; x < numNyanStars; x++) {
             NyanStarData* nyanStar = [[NyanStarData alloc] init];
             NSSize dotSize = NSMakeSize(6,6);
             // Calculate random origin point
