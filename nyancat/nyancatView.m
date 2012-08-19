@@ -39,13 +39,14 @@
                 int numFrame = [[bitmapRep valueForProperty:NSImageFrameCount] intValue];
                 
                 // create a value array which will contains the frames of the animation
-                gifFrames = [NSMutableArray array];
+                gifFrames = [[NSMutableArray alloc] init];
                 
                 for (int i = 0; i < numFrame; ++i)
                 {
                     // set the current frame
                     [bitmapRep setProperty:NSImageCurrentFrame withValue:[NSNumber numberWithInt:i]];
-                    [gifFrames addObject:(id)[bitmapRep CGImage]];
+                    CGImageRef img = [bitmapRep CGImage];
+                    [gifFrames addObject:(id)img];
                 }
                 
                 // stops at the first valid representation
@@ -105,8 +106,10 @@
     
     
     //Figure out where to draw nyancat 
-    NSImage* currentFrame = [NSImage alloc];
-    [currentFrame initWithCGImage:(CGImageRef)[gifFrames objectAtIndex:gifFrameNumber] size:NSZeroSize];
+    CGImageRef imageRef = (CGImageRef) gifFrames[gifFrameNumber];
+
+    NSImage* currentFrame = [[NSImage alloc] initWithCGImage:imageRef size:NSZeroSize];
+
     NSSize viewSize  = [self bounds].size;
     NSSize imageSize = NSMakeSize(200, 140);
     
@@ -152,6 +155,7 @@
             operation: NSCompositeSourceOver
              fraction: 1.0];
     
+    [currentFrame release];
 }
 
 - (void)drawBackground {
